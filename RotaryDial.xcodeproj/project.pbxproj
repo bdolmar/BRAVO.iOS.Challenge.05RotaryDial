@@ -19,6 +19,7 @@
 		5802B44F18C10FFB0017B151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5802B43718C10FFB0017B151 /* UIKit.framework */; };
 		5802B45718C10FFB0017B151 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5802B45518C10FFB0017B151 /* InfoPlist.strings */; };
 		5802B45918C10FFB0017B151 /* RotaryDialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5802B45818C10FFB0017B151 /* RotaryDialTests.m */; };
+		7DE819F8B3AC4C0184EEDD11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E6C33B20E6644F608B4FAA16 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		5802B45418C10FFB0017B151 /* RotaryDialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RotaryDialTests-Info.plist"; sourceTree = "<group>"; };
 		5802B45618C10FFB0017B151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5802B45818C10FFB0017B151 /* RotaryDialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotaryDialTests.m; sourceTree = "<group>"; };
+		E6C33B20E6644F608B4FAA16 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = RotaryDial/Resources/Settings.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,10 @@
 				5802B43218C10FFB0017B151 /* Frameworks */,
 				5802B43118C10FFB0017B151 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
 		};
 		5802B43118C10FFB0017B151 /* Products */ = {
 			isa = PBXGroup;
@@ -109,8 +114,12 @@
 			children = (
 				5802B44218C10FFB0017B151 /* NRDAppDelegate.h */,
 				5802B44318C10FFB0017B151 /* NRDAppDelegate.m */,
-				5802B44518C10FFB0017B151 /* Images.xcassets */,
 				5802B43A18C10FFB0017B151 /* Supporting Files */,
+				84561B60A0154CB0B923481A /* Categories */,
+				AC6199873D8745D3A0F60088 /* Models */,
+				C39E31E3426C4D8F8945D5A6 /* ViewControllers */,
+				CFC6577CC671420791EBB2CD /* Views */,
+				8C2373456DB0478DBBCC7B85 /* Resources */,
 			);
 			path = RotaryDial;
 			sourceTree = "<group>";
@@ -144,6 +153,67 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84561B60A0154CB0B923481A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8C2373456DB0478DBBCC7B85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5802B44518C10FFB0017B151 /* Images.xcassets */,
+				C1E3D8ABB36346C7A950CED3 /* Fonts */,
+				B32C52E716384F6A8307F9E7 /* Data */,
+				D578120A7E634BF9AF475281 /* Images */,
+				E6C33B20E6644F608B4FAA16 /* Settings.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC6199873D8745D3A0F60088 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B32C52E716384F6A8307F9E7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C1E3D8ABB36346C7A950CED3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C39E31E3426C4D8F8945D5A6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CFC6577CC671420791EBB2CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D578120A7E634BF9AF475281 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +224,8 @@
 				5802B42C18C10FFB0017B151 /* Sources */,
 				5802B42D18C10FFB0017B151 /* Frameworks */,
 				5802B42E18C10FFB0017B151 /* Resources */,
+				1993FA3ACAF540A0B51617E4 /* Warn for TODO and FIXME comments */,
+				C7F7C4B231E5436683DBA116 /* Update build number */,
 			);
 			buildRules = (
 			);
@@ -190,7 +262,7 @@
 			attributes = {
 				CLASSPREFIX = NRD;
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Ben Dolmar";
+				ORGANIZATIONNAME = "The Nerdery";
 				TargetAttributes = {
 					5802B44A18C10FFB0017B151 = {
 						TestTargetID = 5802B42F18C10FFB0017B151;
@@ -222,6 +294,7 @@
 			files = (
 				5802B43E18C10FFB0017B151 /* InfoPlist.strings in Resources */,
 				5802B44618C10FFB0017B151 /* Images.xcassets in Resources */,
+				7DE819F8B3AC4C0184EEDD11 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +307,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1993FA3ACAF540A0B51617E4 /* Warn for TODO and FIXME comments */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Warn for TODO and FIXME comments";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		C7F7C4B231E5436683DBA116 /* Update build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update build number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"${TARGET_BUILD_DIR}\"\nbuildPlist=\"${TARGET_BUILD_DIR}\"/\"${INFOPLIST_PATH}\"\n\n# Increment the build number to match the git version\nsvnRevision=`git log --oneline | wc -l`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $svnRevision\" \"$buildPlist\"\n\nbundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\nbundleShortVersionString=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$buildPlist\")\n\n# Update the Settings.bundle\nnewVersion=\"${bundleShortVersionString} (${bundleVersion})\"\n/usr/libexec/PlistBuddy \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\"/Settings.bundle/Root.plist -c \"set PreferenceSpecifiers:1:DefaultValue $newVersion\"\necho \"newVersion: ${newVersion}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5802B42C18C10FFB0017B151 /* Sources */ = {
@@ -311,10 +415,20 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
@@ -344,10 +458,20 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
@@ -442,6 +566,7 @@
 				5802B45E18C10FFB0017B151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5802B45F18C10FFB0017B151 /* Build configuration list for PBXNativeTarget "RotaryDialTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +575,7 @@
 				5802B46118C10FFB0017B151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

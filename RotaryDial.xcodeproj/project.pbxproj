@@ -19,6 +19,11 @@
 		5802B44F18C10FFB0017B151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5802B43718C10FFB0017B151 /* UIKit.framework */; };
 		5802B45718C10FFB0017B151 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5802B45518C10FFB0017B151 /* InfoPlist.strings */; };
 		5802B45918C10FFB0017B151 /* RotaryDialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5802B45818C10FFB0017B151 /* RotaryDialTests.m */; };
+		58CD430118FC62A40044E92B /* NRDArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CD430018FC62A40044E92B /* NRDArcView.m */; };
+		58CD430518FC6CDB0044E92B /* NRDDialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CD430318FC6CDB0044E92B /* NRDDialViewController.m */; };
+		58CD430618FC6CDB0044E92B /* NRDDialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CD430418FC6CDB0044E92B /* NRDDialViewController.xib */; };
+		58CD430918FC8FFD0044E92B /* NRDDialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CD430818FC8FFD0044E92B /* NRDDialView.m */; };
+		58CD430C18FCD2700044E92B /* UIColor+RotaryDial.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CD430B18FCD2700044E92B /* UIColor+RotaryDial.m */; };
 		7DE819F8B3AC4C0184EEDD11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E6C33B20E6644F608B4FAA16 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +54,15 @@
 		5802B45418C10FFB0017B151 /* RotaryDialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RotaryDialTests-Info.plist"; sourceTree = "<group>"; };
 		5802B45618C10FFB0017B151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5802B45818C10FFB0017B151 /* RotaryDialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotaryDialTests.m; sourceTree = "<group>"; };
+		58CD42FF18FC62A40044E92B /* NRDArcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDArcView.h; sourceTree = "<group>"; };
+		58CD430018FC62A40044E92B /* NRDArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDArcView.m; sourceTree = "<group>"; };
+		58CD430218FC6CDB0044E92B /* NRDDialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDDialViewController.h; sourceTree = "<group>"; };
+		58CD430318FC6CDB0044E92B /* NRDDialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDDialViewController.m; sourceTree = "<group>"; };
+		58CD430418FC6CDB0044E92B /* NRDDialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRDDialViewController.xib; sourceTree = "<group>"; };
+		58CD430718FC8FFD0044E92B /* NRDDialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDDialView.h; sourceTree = "<group>"; };
+		58CD430818FC8FFD0044E92B /* NRDDialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDDialView.m; sourceTree = "<group>"; };
+		58CD430A18FCD2700044E92B /* UIColor+RotaryDial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RotaryDial.h"; sourceTree = "<group>"; };
+		58CD430B18FCD2700044E92B /* UIColor+RotaryDial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RotaryDial.m"; sourceTree = "<group>"; };
 		E6C33B20E6644F608B4FAA16 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = RotaryDial/Resources/Settings.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -156,6 +170,8 @@
 		84561B60A0154CB0B923481A /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				58CD430A18FCD2700044E92B /* UIColor+RotaryDial.h */,
+				58CD430B18FCD2700044E92B /* UIColor+RotaryDial.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -196,6 +212,9 @@
 		C39E31E3426C4D8F8945D5A6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				58CD430218FC6CDB0044E92B /* NRDDialViewController.h */,
+				58CD430318FC6CDB0044E92B /* NRDDialViewController.m */,
+				58CD430418FC6CDB0044E92B /* NRDDialViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +222,10 @@
 		CFC6577CC671420791EBB2CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				58CD42FF18FC62A40044E92B /* NRDArcView.h */,
+				58CD430018FC62A40044E92B /* NRDArcView.m */,
+				58CD430718FC8FFD0044E92B /* NRDDialView.h */,
+				58CD430818FC8FFD0044E92B /* NRDDialView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,7 +284,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = NRD;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "The Nerdery";
 				TargetAttributes = {
 					5802B44A18C10FFB0017B151 = {
@@ -295,6 +318,7 @@
 				5802B43E18C10FFB0017B151 /* InfoPlist.strings in Resources */,
 				5802B44618C10FFB0017B151 /* Images.xcassets in Resources */,
 				7DE819F8B3AC4C0184EEDD11 /* Settings.bundle in Resources */,
+				58CD430618FC6CDB0044E92B /* NRDDialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +370,10 @@
 			files = (
 				5802B44018C10FFB0017B151 /* main.m in Sources */,
 				5802B44418C10FFB0017B151 /* NRDAppDelegate.m in Sources */,
+				58CD430118FC62A40044E92B /* NRDArcView.m in Sources */,
+				58CD430518FC6CDB0044E92B /* NRDDialViewController.m in Sources */,
+				58CD430C18FCD2700044E92B /* UIColor+RotaryDial.m in Sources */,
+				58CD430918FC8FFD0044E92B /* NRDDialView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +419,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -440,7 +467,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -508,7 +534,6 @@
 		5802B46018C10FFB0017B151 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RotaryDial.app/RotaryDial";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -531,7 +556,6 @@
 		5802B46118C10FFB0017B151 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RotaryDial.app/RotaryDial";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
